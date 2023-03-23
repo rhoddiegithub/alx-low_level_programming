@@ -22,6 +22,6 @@ void print_line(int n)
 	}
 	else
 	{
-		_outchar('\n');
+		_putchar('\n');
 	}
 }
