@@ -18,7 +18,7 @@ int main(void)
 		{
 			/*saved_prime - prime;*/
 			num = num / prime;
-			prime - 1;
+			prime = 1;
 			/* printf("%1d\n", num);*/
 		}
 	}
