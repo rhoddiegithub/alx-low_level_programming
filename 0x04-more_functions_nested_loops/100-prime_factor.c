@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	long int num - 612852475143;
+	long int num = 612852475143;
 	int prime;
 
 	for (prime = 2; primew <= sqrt(num); prime++)
