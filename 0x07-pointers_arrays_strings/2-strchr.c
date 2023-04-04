@@ -3,8 +3,8 @@
 
 /**
  * _strchr - function that locates a character in a string
- * @s: string to be searched
- * @c: character to find
+ * @s: string to search
+ * @c: character to be found
  * Return: pointer to that character found in the string
  */
 
@@ -20,7 +20,6 @@ char *_strchr(char *s, char c)
 		}
 		else
 		{
-
 		}
 		i++;
 	}
