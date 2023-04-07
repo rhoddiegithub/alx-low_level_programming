@@ -28,7 +28,7 @@ int string_match(char *s1, char *s2, char *after_card)
 	}
 	if (*s1 == *s2)
 	{
-		return (string_match(s1 + 1, s2 + 1, after_card);
+		return (string_match(s1 + 1, s2 + 1, after_card));
 	}
 }
 
