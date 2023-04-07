@@ -30,7 +30,10 @@ int string_match(char *s1, char *s2, char *after_card)
 	{
 		return (string_match(s1 + 1, s2 + 1, after_card));
 	}
-	return (0);
+	else
+	{
+		return (string_match(s1 + 1, after_card, after_card));
+	}
 }
 
 /**
