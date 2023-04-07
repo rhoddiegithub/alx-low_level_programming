@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * compare - compare head and tail indices for match
+ * _compare - compare head and tail indices for match
  * @first: index starting from left of string
  * @last: index starting from right of string, moving backwards
  * Return: 1 if palindrome, 0 if not
