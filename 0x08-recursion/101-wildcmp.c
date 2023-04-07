@@ -49,7 +49,7 @@ int wildcmp(char *s1, char *s2)
 	{
 		return (wildcmps(s1 +, s2 + 1));
 	}
-	else if (s2 == "*")
+	else if (*s2 == "*")
 	{
 		return (string_match(s1,(s2 + 1), (s2 +)));
 	}
