@@ -14,7 +14,7 @@ int string_match(char *s1, char *s2, char *after_card)
 	{
 		return (1);
 	}
-	if (s1 == '\0' && *s2 == ")
+	if (s1 == '\0' && *s2 == "*")
 	{
 		return (string_match(s1, s2 + 1, s2 + 1));
 	}
@@ -22,9 +22,9 @@ int string_match(char *s1, char *s2, char *after_card)
 	{
 		return (0);
 	}
-	if (s2 == ")
+	if (s2 == "*")
 	{
-		return ( string_match(s1, s2 + 1, s2 + 1));
+		return (string_match(s1, s2 + 1, s2 + 1));
 	}
 	if (*s1 == *s2)
 	{
@@ -49,7 +49,7 @@ int wildcmp(char *s1, char *s2)
 	{
 		return (wildcmps(s1 +, s2 + 1));
 	}
-	else if (s2 == ")
+	else if (s2 == "*")
 	{
 		return(string_match(s1,(s2 + 1), (s2 +)));
 	}
