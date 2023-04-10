@@ -20,12 +20,6 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	if (argv[1][0] == '-')
-	{
-		printf("0\n");
-		return (0);
-	}
-
 	num = atoi(argv[1]);
 
 	coins += num / 25;
