@@ -5,7 +5,7 @@
 
 /**
  * _iszero - determines if any number is zero
- * @argv: argument vector. 
+ * @argv: argument vector.
  * Return: no return.
  */
 void _iszero(char *argv[])
@@ -18,14 +18,14 @@ void _iszero(char *argv[])
 			isn1 = 0;
 			break;
 		}
-	
+
 	for (index = 0; argv[2][index]; index++)
 		if (argv[2][index] != '0')
-		{	
+		{
 			isn2 = 0;
 			break;
 		}
-	
+
 	if (isn1 == 1 || isn2 == 1)
 	{
 		printf("0\n");
@@ -42,7 +42,7 @@ void _iszero(char *argv[])
 char *_init_array(char *arr, int len)
 {
 		int index = 0;
-		
+
 		for (index = 0; index < len; index++)
 			arr[index] = '0';
 		arr[len] = '\0';
@@ -59,24 +59,22 @@ char *_init_array(char *arr, int len)
 int _check_num(char *argv[], int n)
 {
 	int len;
-	
+
 	for (len = 0; argv[n][len]; len++)
 		if (!isdigit(argv[n][len]))
 		{
 			printf("Error\n");
 			exit(98);
 		}
-	
+
 	return (len);
 }
 
 /**
- * main - Entry point.
- * program that multiplies two positive numbers.
+ * main - program that multiplies two positive numbers.
  * @argc: number of arguments.
  * @argv: arguments vector.
- * 
- * Return: 0 - success.
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
