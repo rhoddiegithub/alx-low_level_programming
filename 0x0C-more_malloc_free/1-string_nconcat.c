@@ -26,9 +26,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	}
 
-	while (s1[index]; index++)
+	while (s1[index])
 	{
 		len++;
+		index++;
 	}
 
 	string = malloc(sizeof(char) * (len + 1));
