@@ -4,10 +4,10 @@
 /**
  * malloc_checked - function that allocates memory using malloc
  * @b: the number of memory to be allocated
- * Return: A pointer to the allocated memory
+ * Return: pointer to the allocated memory
  */
 
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
 	void *memory = malloc(b);
 
