@@ -45,7 +45,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		string[len++] = s1[index];
 	}
-	for (index = 0; s2[index] && i < n; index++)
+	for (index = 0; s2[index] && index < n; index++)
 	{
 		string[len++] = s2[index];
 	}
