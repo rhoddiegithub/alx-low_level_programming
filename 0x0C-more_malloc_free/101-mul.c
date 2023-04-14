@@ -67,8 +67,8 @@ char *iterate_zeroes(char *str)
  * _isdigit - Converts a digit character to a corresponding int.
  * @c: The character to be converted.
  * Description: If c is a non-digit, the function
- *              exits with a status of 98.
- * Return: The converted int.
+ *	exits with a status of 98.
+ * Return: the converted int
  */
 int _isdigit(char c)
 {
@@ -84,13 +84,13 @@ int _isdigit(char c)
 }
 
 /**
- * get_product - Multiplies a string of numbers by a single digit.
+ * get_product - multiplies a string of numbers by a single digit.
  * @prod: The buffer to store the result.
  * @mult: string of numbers.
  * @digit: single digit.
  * @zeroes: necessary number of leading zeroes.
  * Description: If mult contains a non-digit, the function
- *              exits with a status value of 98.
+ *	exits with a status value of 98.
  */
 void get_product(char *prod, char *mult, int digit, int zeroes)
 {
@@ -132,10 +132,10 @@ void get_product(char *prod, char *mult, int digit, int zeroes)
 }
 
 /**
- * add_number - Adds the numbers stored in two strings.
- * @final_product: The buffer storing the running final product.
- * @next_product: The next product to be added.
- * @next_len: The length of next_prod.
+ * add_number - adds the numbers stored in two strings.
+ * @final_product: the buffer storing the running final product.
+ * @next_product: the next product to be added.
+ * @next_len: the length of next_product.
  */
 void add_number(char *final_product, char *next_product, int next_len)
 {
@@ -175,10 +175,10 @@ void add_number(char *final_product, char *next_product, int next_len)
 
 /**
  * main - Multiplies two positive numbers.
- * @argv: number of arguments passed to the program.
- * @argc: An array of pointers to the arguments.
+ * @argv: number of arguments
+ * @argc: array of pointers to the arguments.
  * Description: If the number of arguments is incorrect or one number
- *              contains non-digits, the function exits with a status of 98.
+ *	contains non-digits, the function exits with a status of 98.
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
