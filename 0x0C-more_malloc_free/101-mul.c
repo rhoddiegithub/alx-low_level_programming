@@ -86,7 +86,7 @@ int _isdigit(char c)
 /**
  * get_product - Multiplies a string of numbers by a single digit.
  * @prod: The buffer to store the result.
- * @multe string of numbers.
+ * @mult: string of numbers.
  * @digit: single digit.
  * @zeroes: necessary number of leading zeroes.
  * Description: If mult contains a non-digit, the function
@@ -133,8 +133,8 @@ void get_product(char *prod, char *mult, int digit, int zeroes)
 
 /**
  * add_number - Adds the numbers stored in two strings.
- * @final_prod: The buffer storing the running final product.
- * @next_prod: The next product to be added.
+ * @final_product: The buffer storing the running final product.
+ * @next_product: The next product to be added.
  * @next_len: The length of next_prod.
  */
 void add_number(char *final_product, char *next_product, int next_len)
